@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana;
+            background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        
+        form {
+            padding: 1em;
+            background: #f9f9f9;
+            border: 1px solid #c1c1c1;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em;
+        }
+        
+        form input {
+            margin-bottom: 1rem;
+            background: #fff;
+            border: 1px solid #9c9c9c;
+        }
+        
+        form button {
+            background: lightgrey;
+            padding: 0.7em;
+            border: 0;
+        }
+        
+        form button:hover {
+            background: #74b9ff;
+        }
+        
+        label {
+            text-align: left;
+            padding: 0.5em 1.5em 0.5em 0;
+        }
+        
+        input {
+            padding: 0.7em;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        
+        input:focus {
+            outline: 1px solid #74b9ff;
+        }
+    </style>
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/574765409494151170/LxSeHFXg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <img width="200px" height="200px" src="https://www.logolynx.com/images/logolynx/f9/f98bf5605c34c3e9617dec04f4ebb2ef.png" alt="" srcset="">
+        <h1>Pendaftaran Mahasiswa</h1>
+        <hr style="height: 2px; width: 25%; background-color: black; border-color: black; " align="center">
+        <h4>Isilah seluruh kolom registrasi dengan sebenar-benarnya.</h4>
+    </div>
+
+
+    <form>
+        <h3>Informasi Personal</h3>
+        <hr align="left" style="height: 2px; background-color: black; border-color: black;" /><br>
+        <label>Nama Lengkap:</label><br>
+        <input type="text" name="nama" placeholder="Nama lengkap..." /><br>
+
+        <label>Tanggal Lahir:</label><br>
+        <input type="date" name="tanggal" /><br>
+
+        <label>Jenis kelamin:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+
+        <label>Agama:</label>
+        <select name="agama">
+          <option value="islam">Islam</option>
+          <option value="kristen">Kristen</option>
+          <option value="hindu">Hindu</option>
+          <option value="budha">Budha</option>
+        </select><br><br>
+
+        <label>Jurusan:</label>
+        <input type="radio" id="teknikinformatika" name="jurusan" value="teknikinformatika">
+        <label for="teknikinformatika">Teknik Informatika</label>
+        <input type="radio" id="sisteminformasi" name="jurusan" value="sisteminformasi">
+        <label for="sisteminformasi">Sistem Informasi</label><br><br>
+
+        <label>Biografi:</label>
+        <textarea name="biografi"></textarea><br><br>
+
+        <h3>Informasi Kontak</h3>
+        <hr align="left" style="height: 2px; background-color: black; border-color: black;" /><br>
+
+        <label>Alamat:</label><br>
+        <input type="text" name="alamat" placeholder="Alamat lengkap..." /><br>
+
+        <label>Kota:</label><br>
+        <input type="text" name="kota" placeholder="Kota..." /><br>
+
+        <label>Provinsi:</label><br>
+        <input type="text" name="provinsi" placeholder="Provinsi..." /><br>
+
+        <label>Kode Pos:</label><br>
+        <input type="number" name="kodepos" placeholder="Kode Pos..." /><br>
+
+        <label>No HP:</label><br>
+        <input type="number" name="nohp" placeholder="No Hp..." /><br>
+
+        <h3>Informasi Akun</h3>
+        <hr align="left" style="height: 2px; background-color: black; border-color: black;" /><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="Your email..." /><br>
+
+
+        <label>Password:</label><br>
+        <input type="password" name="password" placeholder="Password..." /><br>
+
+
+        <input style="background-color:  #49D49D; width: 100%;" type="submit" name="submit" value="Daftar" />
+
+    </form>
+
+</body>
+
+</html>
